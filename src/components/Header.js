@@ -4,7 +4,7 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <img src="logo.png"  />
+      <img src={logo.png} alt="" />
     </div>
     <div className="content">
       <div className="inner">
