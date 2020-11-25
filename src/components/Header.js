@@ -4,7 +4,7 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      x
+      <img src="logo.png"  />
     </div>
     <div className="content">
       <div className="inner">
@@ -36,7 +36,7 @@ const Header = props => (
         </li>
         <li>
           <button
-            onClick={() => {
+            onClick={()  => {
               props.onOpenArticle('about')
             }}
           >
