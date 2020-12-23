@@ -33,76 +33,115 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            To be added
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
+
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="product"
+          className={`${this.props.article === 'product' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">product</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
+          <h3>
+            Automated Customer Onboarding
+          </h3>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            Easy, all digital sign-up process. Accessible from any device.     
+         </p>
+
+         <h3>
+            Easy Client Billing
+         </h3>
+          <p>
+            Billing can be done on a flat-fee basis or with a breakpoint tier system you customize. You define the billing cycle and the rate, wealthbot takes care of the rest.
           </p>
+
+          <h3>
+            Flexible Portfolio Models
+          </h3>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            We can provide access to the entire investment universe of securities. Link to any asset class and build as many models as your heart desires. Each model can be tied to it's own risk assessment number.
+          </p>
+            
+          <h3>
+            Customizable Risk Questionnaire
+          </h3>
+          <p>
+            Ask the questions that make your clients talk. Understand your clients and build your own risk assessment.
+          </p>
+
+          <h3>
+            Automated Rebalancer
+          </h3>
+          <p>
+            Generate and sends rebalancing trade orders to your custodian based on an asset class's tolerance bands, a set rebalancing schedule or both.
+          </p>
+
+          <h3>
+            Bank Level Security
+          </h3>
+          <p>
+            Wealthbot uses the same 128-bit encryption and physical security as banks. Plus, clients’ assets reside with your custodian and are never directly touched by your system.  
+          </p>
+
+          <h3>
+            Tax-Optimized Portfolio Management
+          </h3>
+          <p>
+            Harvest losses to offset taxes on both gains and income, enable municipal bond substitutions, and automatically identify and avoid wash sales.
+          </p>
+
+          <h3>
+            Automated Document Flow
+          </h3>
+          <p>
+            Save time and trees by on-boarding your clients without paper using our DocuSign integration.
           </p>
           {close}
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          id="download"
+          className={`${this.props.article === 'download' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">Download</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
+          <h2>
+            Three Easy Steps
+          </h2>
+
+          <h3>
+            <a href="https://github.com/wealthbot-io/wealthbot">Step 1</a>
+          </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            Click this step to go to our Github Repository!
+          </p>
+
+          <h3>
+            Step 2
+          </h3>
+          <p>
+            Follow the instructions in our ReadMe file.
+          </p>
+
+          <h3>
+            Step 3
+          </h3>
+          <p>
+            Enjoy Wealthbot, as you just unlocked your own wealth management system.
           </p>
           {close}
         </article>
@@ -140,25 +179,25 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
+                href="https://twitter.com/wealthbot"
                 className="icon fa-twitter"
               >
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
+              <a href="https://www.facebook.com/wealthbotofficial/" className="icon fa-facebook">
                 <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
+              <a href="https://github.com/wealthbot-io/wealthbot" className="icon fa-instagram">
                 <span className="label">Instagram</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/wealthbot-io/wealthbot"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
